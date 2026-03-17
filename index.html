@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAR: Result Visualization</title>
+    <style>
+        /* Global Styles */
+        body { 
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #2C3E50;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.8em;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        header h2 {
+            font-size: 1.5em;
+            margin-top: 0;
+            font-weight: 300;
+        }
+
+        /* Table of Contents Styling */
+        .toc-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        .toc-button {
+            display: inline-block;
+            padding: 18px 30px;
+            font-size: 18px;
+            color: white;
+            background-color: #3498db; /* Adjusted button color */
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .toc-button:hover {
+            background-color: #2980b9; /* Darker shade for hover effect */
+            transform: translateY(-5px);
+        }
+
+        .toc-button:active {
+            background-color: #1c5987; /* Even darker for active effect */
+            transform: translateY(0);
+        }
+
+        /* Study Section Styling */
+        .study-section {
+            background-color: white;
+            margin: 40px 20px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            margin-top: 40px;
+        }
+
+        .study-header {
+            background-color: #ECF0F1;
+            padding: 15px;
+            font-size: 24px;
+            font-weight: 500;
+            text-align: center;
+            margin-bottom: 30px;
+            border-radius: 8px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+
+        .button-container a {
+            background-color: #3498db; /* Same color as buttons */
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 8px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .button-container a:hover {
+            background-color: #2980b9;
+            transform: translateY(-5px);
+        }
+
+        .button-container a:active {
+            background-color: #1c5987;
+            transform: translateY(0);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2C3E50;
+            color: white;
+            font-size: 14px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.2em;
+            }
+
+            header h2 {
+                font-size: 1.3em;
+            }
+
+            .toc-button {
+                font-size: 16px;
+                padding: 14px 25px;
+            }
+
+            .study-section {
+                margin: 30px 15px;
+                padding: 20px;
+            }
+
+            .button-container a {
+                font-size: 14px;
+                padding: 10px 20px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <h1>DAR: Result Visualization from Different Experiments in Class-Incremental Learning for HAR</h1>
+    </header>
+
+    <!-- Experiment 1 Section -->
+    <div id="experiment1" class="study-section">
+        <div class="study-header">Experiment 1: Comparison of Results with Replay-Based Methods</div>
+        <p><b>1. Box Plot of Accuracy for All Classes by Tasks and Bar Charts of Average Metrics by Tasks:</b></p>
+        <div class="button-container">
+            <a href="Ex1/HHAR.html">HHAR</a>
+            <a href="Ex1/UCI.html">UCI HAR</a>
+            <a href="Ex1/MotionSense.html">MotionSense</a>
+            <a href="Ex1/RealWorld.html">RealWorld</a>
+            <a href="Ex1/PAMAP.html">PAMAP2</a>
+        </div>
+        <br>
+        <p><b>2. Summary Tables of Accuracy and Computation Time by Participants:</b></p>
+        <div class="button-container">
+            <a href="Ex1/P0.html">Participant 0</a>
+            <a href="Ex1/P1.html">Participant 1</a>
+            <a href="Ex1/P2.html">Participant 2</a>
+        </div>
+    </div>
+
+    <!-- Experiment 2 Section -->
+    <div id="experiment2" class="study-section">
+        <div class="study-header">Experiment 2: Impact of Sample Size in VAE-Generated Data</div>
+        <p><b>1. Box Plot of Accuracy for All Classes by Tasks and Bar Charts of Average Metrics by Tasks:</b></p>
+        <div class="button-container">
+            <a href="Ex2/HHAR.html">HHAR</a>
+            <a href="Ex2/UCI.html">UCI HAR</a>
+            <a href="Ex2/MotionSense.html">MotionSense</a>
+            <a href="Ex2/RealWorld.html">RealWorld</a>
+            <a href="Ex2/PAMAP.html">PAMAP2</a>
+        </div>
+
+        <p><b>2. Summary Tables of Accuracy by Participants:</b></p>
+        <div class="button-container">
+            <a href="Ex2/Tables.html">Summary Tables of Accuracy of All Participants</a>
+        </div>
+    </div>
+
+    <!-- Experiment 3 Section -->
+    <div id="experiment3" class="study-section">
+        <div class="study-header">Experiment 3: Comparison of Results with Generative Replay Methods</div>
+        <p><b>1. Box Plot of Accuracy for All Classes by Tasks and Bar Charts of Average Metrics by Tasks:</b></p>
+        <div class="button-container">
+            <a href="Ex3/HHAR.html">HHAR</a>
+            <a href="Ex3/UCI.html">UCI HAR</a>
+            <a href="Ex3/MotionSense.html">MotionSense</a>
+            <a href="Ex3/RealWorld.html">RealWorld</a>
+            <a href="Ex3/PAMAP.html">PAMAP2</a>
+        </div>
+
+        <p><b>2. Summary Tables of Accuracy and Computation Time by Participants:</b></p>
+        <div class="button-container">
+            <a href="Ex3/P0.html">Participant 0</a>
+            <a href="Ex3/P1.html">Participant 1</a>
+            <a href="Ex3/P2.html">Participant 2</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 DAR Research. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

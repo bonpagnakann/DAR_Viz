@@ -1,0 +1,6 @@
+Exemplar_Size,Method,Task 2
+All Exemplars,FeTrIL,0.821729608757847
+All Exemplars,DDGR,0.372535759519086
+All Exemplars,VAE_BBox,0.6246841445686352
+All Exemplars,VAE_Filter,0.6404982505231411
+All Exemplars,VAE_GMM,0.8119127162729199
